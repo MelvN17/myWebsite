@@ -1,0 +1,702 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    font: 15px/1.5 Arial, Helvetica, sans-serif;
+}
+
+  /* width */
+  ::-webkit-scrollbar {
+    width: 12px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px red; 
+    border-radius: 5px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background:#e8491d;
+    border-radius: 5px;
+  }
+  
+.container{
+    width:80%;
+    margin: auto;
+}
+
+
+#logo img{
+    position: absolute;
+    float: left;
+    left: 2%;
+    top: 1%;
+    width: 30%;
+    height: auto;
+}
+header{
+    background: #333;
+    padding-top: 25px;
+    min-height: 60px;
+    border-bottom: #e8491d 4px solid;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+header a{
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+header li{
+    display: inline-block;
+    padding: 0 20px;
+
+}
+
+header #logo{
+    float: left;
+}
+
+header nav{
+    float: right;
+    margin-top: 10px;
+}
+
+@media screen and (max-width: 800px) {
+    header li{
+    margin-top: 5%;
+    padding: 0 4px;
+    
+    }
+    header{
+        background: #333;
+        padding-top: 25px;
+        min-height: 100px;
+        transition: 1s ease;
+        border-bottom: #e8491d 4px solid;
+    }
+    .quoteBox{
+        display: none;
+    }    
+  }
+
+
+
+.active a, .highlight{
+    color: #e8491d;
+    font-weight: bold;
+}
+
+a:hover{
+    color: #e8491d;
+    font-weight: bold;
+}
+
+/* Pic */
+#main-background{
+   
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(../img/banner5.jpg);
+    width: 100%;
+    height: 150vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+
+#main-background2{
+   
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/profileBg.jpg);
+    width: 100%;
+    height: 1080px;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    
+}
+
+#main-background3{
+   
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(../img/banner4.jpg);
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    
+}
+
+.quoteBox{
+    position: relative;
+    top: 55%;
+    left: 50%;
+    width: 500px;
+    transform: translate(-50%, -50%);
+    border:#e8491d 1px solid;
+    border-radius: 25px;
+    padding: 10px 150px 200px 150px;
+}
+
+.quoteBox h1{
+    position: absolute;
+    text-align: center;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 25px;
+    color: #D8D8D8;
+    text-transform: uppercase;
+}
+
+.quoteBox .tanjiro{
+    position: absolute;
+    top: 65%;
+    left: 75%;
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: bold;
+    color:white;
+}
+
+.tanjiro:hover{
+    font-weight: bold;
+    color:  #e8491d;
+}
+
+footer{
+    background-color:  #e8491d;
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+
+/* Contact US */
+.container2{
+    width: 40%;
+    height: 80%;
+    background: #333;
+    margin: 80px 150px;
+    position: absolute;
+    border: 5px #e8491d solid;
+    transition: all 1s ease-in-out;
+    border-radius: 50px;
+}
+
+.contact-title{
+margin-top: 70px;
+color: white;
+transition: all 2s ease-in-out;
+text-transform: uppercase;
+text-align: center;
+}
+
+.contact-title h1{
+    font-size: 32px;
+    line-height: 10%;
+}
+
+.contact-title h2{
+    font-size: 22px;
+    line-height: 100%;
+}
+
+form{
+    margin-top: 50px;
+    transition: all 2s ease-in-out;
+    text-align: center;
+}
+
+.form-control{
+    width: 70%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1px #e8491d solid;
+    color: white;
+    font-size: 18px;
+    margin-bottom: 16px;
+}
+
+.container4{
+    width: 30%;
+    height: 30%;
+    background: #333;
+    right: 5%;
+    top: 5%;
+    padding: 25px;
+    margin: 25px;
+    position: absolute;
+    border: 4px #e8491d solid;
+    transition: all 1s ease-in-out;
+    border-radius: 20px;
+
+}
+
+
+.container4 .row2{
+    color: white;
+    padding-bottom: 5px;
+    padding-left: 50px;
+    position: relative;
+}
+
+h4{
+    font-weight: 12%;
+    max-width: 100%;
+    text-align: center;
+    font-size: 15px;
+}
+
+
+.container4:hover .container5{
+    position: absolute;
+    width: 90%;
+    height: 30%;
+    bottom: -110px;
+    right: 5%;
+    border: 3px #e8491d solid;
+    transition: all .10ms ease-in-out;
+    border-radius: 20px;
+    background: #333;
+    display: block;
+
+}
+
+@media screen and (max-width: 980px) {
+    .container4{
+        display: none;
+    }
+    .container2{
+        width: 75%;
+        height: 80%;
+        background: #333;
+        margin: 80px 60px;
+        position: absolute;
+        border: 5px #e8491d solid;
+        transition: all 1s ease-in-out;
+        border-radius: 50px;
+    }
+    .contact-title h1{
+        font-size: 100%;
+        line-height: 10%;
+    }
+    
+    .contact-title h2{
+        font-size: 100%;
+        line-height: 100%;
+    }
+  }
+
+.icons img{ 
+    padding: 2px;
+    position: relative;
+    left: 12%;
+    top: 55px;
+    width: 12%;
+    height: 12%;
+    display: none;
+    transition: all 0.5s ease-in-out;
+}
+
+.row2 .fasicons{
+    position: absolute;
+    bottom: 15%;
+    left: 5%;
+    font-size: 25px;
+    padding: 10px 0;
+}
+
+
+.container4:hover .icons img{
+    display: inline-block;
+}
+
+input{
+    height: 30px;
+}
+
+form .submit{
+    background: #e8491d;
+}
+
+form .submit:hover{
+    background: #9c3113;
+    cursor: pointer;
+}
+
+/* Profile */
+
+.containerLeft{
+    position: absolute;
+    width: 21%;
+    height: 800px;
+    margin: 50px;
+    margin-right: 50%;
+    background:  #333;
+    border-left: 3px black solid;
+    border-right: 3px black solid;
+    border-bottom: 3px black solid;
+}
+  /* To hide the Left container and fit the middle container if site is resized*/
+ @media screen and (max-width: 1300px) {
+  .containerLeft{
+    display: none;
+  }
+}
+.containerMiddle{
+    position: absolute;
+    left: 30%;
+    width: 60%;
+    max-height: 900;
+    margin: 50px 0;
+    background:  #333;
+    border: 3px black solid;
+}
+
+@media screen and (max-width: 1300px) {
+    .containerMiddle{
+      left: 10%;
+      width: 80%;
+      transition: 1s all ease-in-out
+    }
+    .row{
+        text-align: center;
+    }
+  }
+
+.row{
+    padding: 0px 25px;
+    margin-bottom: 250px;
+    flex: 1;
+    box-sizing: border-box;
+    border: 2px#e8491d solid;
+    background: rgb(31, 30, 30);
+}
+
+h2{
+    color: white;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
+.containerLeft .profilePic{
+    position: absolute;
+    width: 65%;
+    height: 25%;
+    top: 9%;
+    left: 15%;
+    border-radius: 25px;
+    padding: 5px;
+    border: 1px #e8491d solid;
+
+}
+
+.containerLeft .offline{
+    position: absolute;
+    width: 6%;
+    left: 50%;
+    top: 2.8%;
+    height: auto;
+}
+.containerLeft h3{
+    max-width: 200px;
+    position: absolute;
+    color:#ffffff ;
+    font-size: 18px;
+    text-align: left;
+    padding: 0 20px;
+}
+
+.containerLeft h4{
+    position: absolute;
+    color: rgb(196, 189, 189);
+    font-size: 80%;
+    float: left;
+    padding: 0 20px;
+    top: 3.5%;
+}
+
+.counter{
+    position: absolute;
+    bottom: 2%;
+    left: 5%;
+    border: 1px  #e8491d solid;
+    background: rgb(31, 30, 30);
+    padding: 25px 75px;
+}
+
+.smallContainer{
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    width: 90%;
+    height: 30%;
+    border: 1px  #e8491d solid;
+    background: rgb(31, 30, 30);
+}
+.row3{
+    position: relative;
+    padding: 20px 2px;
+}
+
+.row3 h4{
+    color: white;
+    font-size: 13px;
+}
+
+.row3 p{
+    position: absolute;
+    color: rgb(230, 220, 220);
+    font-size: 12px;
+    padding: 8px 0;
+    left: 25%;
+}
+
+.note{
+    padding: 25px 10px;
+    position: absolute;
+    top: 34%;
+    left: 24%;
+}
+
+.interaction a{
+    font-size: 15px;
+    line-height: 23px;
+    color: white;
+    text-decoration: white;
+}
+
+.interaction:hover a{
+    color: #e8491d;
+}
+
+.fasicons2{
+    position: absolute;
+    font-size: 16px;
+    top: 37%;
+    left: 19%;
+    width: 18px;
+}
+
+#profile{
+    position: relative;
+    background-color:  #e8491d;
+    padding: 10px;
+    margin-top: 0px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+/*Informations*/
+.personalInfo1{
+    position: absolute;
+    padding: 5px;
+    top: 8.5%;
+    left: 5%;
+    color: white;
+}
+
+.personalInfo2{
+    position: absolute;
+    padding: 0;
+    top: 9%;
+    right: 5%;
+    color: white;
+}
+
+.ans{
+    position: absolute;
+    width: 400px;
+    color:  #e8491d;
+    font-size: 16px;
+    padding-left: 25px;
+    left: 90%;
+}
+.ans2{
+    
+    color:  #e8491d;
+    font-size: 16px;
+    padding-left: 25px;
+    left: 15%;
+}
+
+/* School Background */
+
+.schoolBackground{
+    position: absolute;    
+    top: 43%;
+    left: 5%;
+    color: white;
+}
+
+.schoolBackground h3{
+    padding-bottom: 30px;
+}
+
+.ans3{
+    position: absolute;
+    width: 400px;
+    color:  #e8491d;
+    font-size: 16px;
+    padding-left: 25px;
+    left: 90%;
+}
+
+.moreInfoCont{
+    position: absolute;
+    top: 37%;
+    right: 5%;
+    margin: 40px;
+}
+.moreInfo{
+    margin-top: 30px;
+    padding: 8px 18px;
+    border-radius: 25px;
+    border: 1px #e8491d solid;
+}
+.moreInfo a{
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+}
+
+/* hobbies and skills */
+
+.skills{
+    position: absolute;
+    bottom: 2%;
+    left: 10%;
+}
+.skills h2{
+    padding-top: 0;
+    font-size: 22px;
+}
+.skills .skillsInfo{
+    color: #e8491d;
+ 
+ }
+ 
+.skillsInfo h3{
+    font-size: 16px;
+}
+
+.hobbies{
+    position: absolute;
+    bottom: 2%;
+    left: 65%;
+}
+
+.hobbies h2{
+    padding-top: 0;
+    font-size: 22px;
+}
+.hobbies .hobbiesInfo{
+    color: #e8491d;
+ }
+ 
+.hobbiesInfo h3{
+    font-size: 16px;
+}
+
+
+@media screen and (max-width: 900px) {
+    .personalInfo1{
+        position: absolute;
+        top: 6%;
+        left: 4%;
+        padding: 0;
+        color: white;
+        font-size: 12px;
+        padding-bottom: 0px;
+    }
+    
+    .personalInfo2{
+        position: absolute;
+        padding: 0;
+        top: 20%;
+        left: 4%;
+        font-size: 12px;    
+        color: white;
+    }
+
+    .ans{
+        position: absolute;
+        width: 400px;
+        color:  #e8491d;
+        font-size: 12px;
+        padding-left: 25px;
+        left: 90%;
+    }
+    .ans2{
+        
+        color:  #e8491d;
+        font-size: 12px;
+        padding-left: 25px;
+
+    }
+
+    .moreInfoCont{
+        display: none;
+    }
+
+    .schoolBackground{
+        position: absolute;    
+        top: 43%;
+        left: 5%;
+        color: white;
+    }
+    
+    .schoolBackground h3{
+        padding-bottom: 30px;
+        font-size: 12px;
+    }
+    
+    .ans3{
+        position: absolute;
+        width: 400px;
+        color:  #e8491d;
+        font-size: 12px;
+        padding-left: 25px;
+        left: 90%;
+    }
+    
+    .skills{
+        position: absolute;
+        bottom: 8%;
+        left: 5%;
+    }
+    .skills h2{
+        padding-top: 0;
+        font-size: 14px;
+    }
+
+    .skillsInfo h3{
+        font-size: 12px;
+    }
+
+        
+    .hobbies{
+        position: absolute;
+        bottom: 8%;
+        left: 65%;
+    }
+
+    .hobbies h2{
+        padding-top: 0;
+        font-size: 14px;
+    }
+
+    .hobbiesInfo h3{
+        font-size: 12px;
+    }
+}
